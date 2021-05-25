@@ -9,7 +9,7 @@ from sklearn.utils import shuffle
 import math
 
 # path to generated images
-data_path = '../../../term1_data/'
+data_path = '../data/'
 # csv file generated
 csv_file = 'driving_log.csv'
 img_file = 'IMG'
@@ -114,7 +114,7 @@ cp_callback = tf.keras.callbacks.ModelCheckpoint(
 reduce_lr_cb = tf.keras.callbacks.ReduceLROnPlateau(
     monitor='val_loss', factor=0.1,
     patience=3, min_lr=1E-7, verbose=2)
-    
+
 es_cb = tf.keras.callbacks.EarlyStopping(
     monitor='val_loss', min_delta=0, patience=5, verbose=2,
     mode='auto', baseline=None, restore_best_weights=True)
