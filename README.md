@@ -92,7 +92,7 @@ The trained network is used to generate streering commands from a single front-f
 
 #### 1. An appropriate model architecture has been employed
 
-I used the model architecture suggested in [this](https://arxiv.org/abs/1604.07316) paper.<br>
+I created the model architecture based on the one suggested in [this](https://arxiv.org/abs/1604.07316) paper.<br>
 
 ![alt text][figure3]
 
